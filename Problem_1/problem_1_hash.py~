@@ -1,0 +1,9 @@
+the_list = [10, 15, 3, 7]
+k = 20
+
+dict_table = {}
+
+for i in the_list:
+	dict_table[i] = k - i
+	if (k - i) in dict_table.keys() and ((k - i) + i) == k:
+		print(i, (k - i))
