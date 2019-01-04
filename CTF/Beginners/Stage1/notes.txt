@@ -1,0 +1,5 @@
+Download archive off the beginners
+run file on archive, its a zip
+unzip
+pdf is obstructed for username/pw
+pdf2text gives password

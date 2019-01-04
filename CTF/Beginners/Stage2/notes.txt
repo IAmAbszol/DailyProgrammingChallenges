@@ -1,0 +1,9 @@
+Extract as stage 1
+Run through ocr
+https://www.newocr.com/
+
+Tricky part, python attempt failed though online theres a rotator
+
+https://www.mobilefish.com/services/rot13/rot13.php
+
+Rotation 7 yields CTF
