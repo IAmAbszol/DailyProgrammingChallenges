@@ -1,0 +1,12 @@
+Proceed as usual
+
+gzip -d challenge*
+
+file challenge.ext4 --> file system =D
+sudo mount -o loop challeneg.ext4 /tmp
+cd /tmp
+ls -la 
+.media .........
+extract
+cat
+BOOM

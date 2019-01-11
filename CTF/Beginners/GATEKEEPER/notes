@@ -1,0 +1,8 @@
+The usual
+
+We get an application?
+
+Faster way, run strings
+Observe that it checks for some string that looks reversed
+echo "that string" | rev --> Thats our password for CTF{%s}
+

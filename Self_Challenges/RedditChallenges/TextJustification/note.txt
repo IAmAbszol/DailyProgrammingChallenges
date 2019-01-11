@@ -1,0 +1,4 @@
+Thanks to Tushar Roy for the tutorial
+on Text-justification.
+
+His code also helped for computing the cost matrix.
