@@ -1,0 +1,10 @@
+This one was buggy and had to turn for help after proc
+
+Addressing the server, in 2 it tries to CAT a file, literally.
+
+proc yields all the information for current on going actions and file system information.
+
+This is where it drops off, consulting other guides, ../../../../../../proc/self/exe gives us the idea of this flag file, my binary didn't yield that.
+
+Google CTF shows a flags file, using
+../flag will give the password.

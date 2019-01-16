@@ -1,0 +1,11 @@
+Proceed as usual
+
+Hexedit icon file, driver.txt resides within (After looking at google ctf notes, we can actually 
+note that pk is a zip header)
+
+unzip foo.ico or I did
+dd if=foo.ico bs=1 skip=422 of=extracted
+
+Doing the previous yields an additional step by running line 6 on extracted.
+
+driver.txt is yielded.

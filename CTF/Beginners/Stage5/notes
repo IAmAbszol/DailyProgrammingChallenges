@@ -1,0 +1,7 @@
+nc allows us to connect to server provideds manual page =]
+
+! to execute command
+!ps axu allows us to view any process action
+!ls -al /home --> Yields a user by moar
+!ls -al /home/moar yields some files =]
+!cat /home/moar/disable_dmz.sh --> CTF password
