@@ -1,5 +1,9 @@
 import unittest
 
+'''
+	O(n*m) time complexity
+	O(1) space complexity
+'''
 def solve(str1, str2):
 	longest, shortest = (str1, str2) if len(str1) > len(str2) else (str1, str1)
 	
