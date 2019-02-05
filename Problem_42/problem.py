@@ -36,6 +36,7 @@ def solve(arr, k):
 			continue
 		path.append(arr[i])
 		j -= arr[i]
+	# We still have some sum left over
 	if j > 0:
 		path.append(arr[0])
 		
