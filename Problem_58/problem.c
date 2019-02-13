@@ -46,9 +46,35 @@ int main(char **argv) {
 				low = mid + 1
 	*/
 
+	int k = 8;
 	int arr[] = { 13, 18, 25, 2, 8, 10 };
-	int high = sizeof(arr) / sizeof(int);
-	fprintf(stdout, '%d
+	int low = 0, mid = 0, high = sizeof(arr) / sizeof(int) - 1;
+	while(low <= high) {
+
+		mid = (low + high) / 2;
+
+		if(arr[mid] == k) {
+			fprintf(stdout, "%d\n", mid);
+			exit(0);
+		}
+		
+		// Case 1
+		if(arr[low] >= arr[mid]) {
+			if(k >= arr[low] && k <= arr[mid]) {
+				// Trapped on LHS
+				high = mid - 1;
+			} else{
+				low = mid + 1;
+			}
+		// Case 2
+		} else {
+			if(k >= arr[low] && k <= arr[mid]) {
+				high = mid - 1;
+			} else {
+				low = mid + 1;
+			}
+		}
+	}
 
 	return 0;
 
