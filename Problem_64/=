@@ -1,0 +1,50 @@
+import unittest
+
+def solve(n):
+	if n < 1:
+		return None
+
+	def is_valid_move(board, px, py):
+		return 0 <= py < len(board) and 0 <= px < len(board[0]) and not board[py][px]
+
+	def next_moves(board, px, py):
+		move_sublist = [
+        (2, 1),
+        (1, 2),
+        (1, -2),
+        (-2, 1),
+        (-1, 2),
+        (2, -1),
+        (-1, -2),
+      	(-2, -1),
+    	]
+		
+		moves = [(py + y_delta, px + c_delta) for y_delta, c_delta in move_sublist]
+		return  [move for move in moves if is_valid_move(board, move[0], move[1])]
+
+	board = [[False for _ in range(n)] for _ in range(n)]
+	stack = []	
+
+	px, py = 0, 0
+	count = 0
+	stack.append((py, px))
+	while True:
+		if not stack:
+			break
+		if all(col for row in board for col in row):
+			count += 1
+		for row in board:
+			for col in row:
+				print(col, '\t')
+		print(stack[-1])
+		py, px = stack.pop()
+		moves = next_moves(board, px, py)
+		if len(moves) == 0:
+			continue
+		for move in moves:
+			stack.append(move)
+		board[py][px] = True
+		
+	return count
+
+print(solve(3))

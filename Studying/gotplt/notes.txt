@@ -1,0 +1,14 @@
+got --> Global offset table, filled in by the linker etiher statically or dynamically.
+
+plt --> Procedure Linkage Table, stubs that look up addresses in the got.plt section. 
+Either triggers the code to lookup address or simply hop to the address.
+
+.got.plt --> Contains target addresses or an address back in the plt (Procedure lookup table). Was originally part of the .got section.
+
+.plt.got --> Procedure linkage table coupled with a Global offset table, contains code to jump to the first entry of the got.
+
+
+To obtain section headers, objdump -h plt
+VMA - Virtual memory address denotes where the section is ran when the program is ran.
+LMA - Load memory address denotes where the section is to be loaded.
+Most of the time these are equal, case in which they aren't could be within a ROM section.

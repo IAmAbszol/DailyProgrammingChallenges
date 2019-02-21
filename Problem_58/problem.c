@@ -57,8 +57,9 @@ int main(char **argv) {
 			fprintf(stdout, "%d\n", mid);
 			exit(0);
 		}
-		
+
 		// Case 1
+		
 		if(arr[low] >= arr[mid]) {
 			if(k >= arr[low] && k <= arr[mid]) {
 				// Trapped on LHS
