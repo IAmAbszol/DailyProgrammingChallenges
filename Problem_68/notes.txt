@@ -1,0 +1,7 @@
+Diagonal equation is
+
+RHS to LHS /
+B - A of Row --> Result + B.col == A.col
+
+LHS to RHS \
+B - A of Row --> Result + A.col == B.col

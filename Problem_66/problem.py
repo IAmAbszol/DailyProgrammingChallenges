@@ -36,7 +36,8 @@ def toss_unbiased(data):
 	unique, counts = np.unique(np_generated, return_counts=True)
 	counts = [(count / 100) for count in counts]
 	generated_dict = dict(zip(unique,counts))
-	if generated_dict[lowest] > data[lowest]:
+	
+	if lowest in data.keys() and lowest in generated_dict.keys() and generated_dict[lowest] > data[lowest]:
 		return lowest
 	else:
 		other = list(set(data.keys()))
