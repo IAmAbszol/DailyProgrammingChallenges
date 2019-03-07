@@ -1,0 +1,5 @@
+Problem.java isn't implemented as I missed the time compelxity needing to be O(n).
+The logic is completely written out but isn't faster than O(n).
+
+problem.py contains the Binary Median implementation, this was written in Python in review
+for sheer simplicity of list splicing.

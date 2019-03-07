@@ -1,0 +1,1 @@
+Decided to do floor and ceil, off the geeksforgeeks page on this question.
