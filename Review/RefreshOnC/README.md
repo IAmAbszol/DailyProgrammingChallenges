@@ -1,4 +1,4 @@
-<h2>Refresh on the C programming language</h4>
+<h2>Refresh on the C programming language</h2>
 <p><i>I decided to re-teach myself the C language in 24 hours</i></p>
 </br>
 <h5>Credits to Kernighan & Kitchie</h5>
