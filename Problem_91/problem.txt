@@ -1,0 +1,62 @@
+This problem doesn't require coding as it's a "What will this do type of problem"
+
+functions = []
+for i in range(10):
+	functions.append(lambda  : i)
+
+for f in functions:
+	print(f())
+
+-----------------------------------------
+
+Analyzing before running:
+Looking at this code sample, we first construct an empty list with the variable declaration name of functions.
+
+We then proceed through a loop of 10 values and append them onto the list, with a twist.
+
+The lambda expression BLANK takes in i, hence we might be appending onto this list a blank value.
+
+Afterwards to will just print f.
+
+Lambda expressions are typically --> lambda x : 5 + y where y might be passed.
+
+In this case, the blank variable name is irrelevant and will only print the i's value.
+
+Expected output
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+-----------------------------------------
+
+Actual output
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+
+Why? This actually is pretty cool. It seems how lambda works is by communicating possibly with an outside entity, in Java our static classes can act like this.
+
+Ex: A call B
+	C call B
+	A set name to Bob in B
+	C set name to Kyle in B
+
+	A call B --> Kyle
+	C call B --> Kyle
+
+It seems lambda takes on this role as well, due to the name ' ' being registered to some outside entity in Python. With this, i is continually updated and when it's called, prints all 9's. COOL
