@@ -1,0 +1,18 @@
+First started with a refresher on branches.
+
+Create new branch
+git checkout master --> Wanted new branch off
+git branch new_branch
+git checkout new_branch
+
+Rebasing
+git checkout master
+git rebase new_branch
+git commit -m "changes"
+git push 
+
+Deleting Branches
+git branch -d new_branch --> Locally
+git push origin --delete new_branch --> Remotely (Cleans it up)
+git commit -m "changes"
+git push
