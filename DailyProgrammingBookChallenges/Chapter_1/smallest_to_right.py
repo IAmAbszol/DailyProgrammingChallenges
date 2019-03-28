@@ -22,6 +22,7 @@ def smallest(arr):
 	for elm in reversed(arr):
 		idx = bisect.bisect_left(seen, elm)
 		result.append(idx)
+		print(seen, result)
 		bisect.insort(seen, elm)
 	return list(reversed(result))
 

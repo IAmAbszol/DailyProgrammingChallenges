@@ -1,0 +1,6 @@
+I truly didn't understand the philosphy behind this problem or how to go about it.
+
+Reading the paragraph introducing it, it makes sense that a brute force solution is possible
+but maybe more context next time as to how the list provided is transformed to the list generated.
+
+The key to take away from this is *greater*, how do you define greater in any way. Very broad.

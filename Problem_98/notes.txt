@@ -1,0 +1,11 @@
+This is a boggle type algorithm, treat every element as a node.
+
+The objective is for every node, create a set of visited. Perform a DFS approach and traverse under these conditions
+1. Node we are at is the correct index letter of our word. Ex. Word: node, at node d, index 2 should be d as well.
+2. We are still within the bounds of the board.
+3. We are not back on the same node, we check this using visited set.
+
+If we reach the end while following these rules, return true.
+Then we actually get more into our DFS by splitting into the 4 directions or 8 directions made possible.
+
+Not goin to code this one out as it's straight forward but its good to know.

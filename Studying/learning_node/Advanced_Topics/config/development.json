@@ -1,0 +1,6 @@
+{
+    "name" : "My development environment",
+    "mail": {
+        "host": "dev-mail-server"
+    }
+}
