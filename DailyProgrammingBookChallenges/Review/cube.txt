@@ -1,0 +1,78 @@
+This problem was asked online and I wanted to touch base on it and explain the two ways that I can think about this.
+
+Let there be a cube of 10x10x10 dimensions, like a Rubix cube.
+Thus it should be thought of as each cube being of 1x1x1 dimension within this 10x10x10 cube.
+The outside of the cube as been completely covered in paint, knowing this:
+
+	1. How many of the cubes have been painted?
+	2. Follow-up: How many cubes have NOT been painted?
+
+Method 1: Instinctively I leaned towards a physical representation as numbers are great and all but 
+physically it makes all the better.
+
+The cube as we know is of 1,000 smaller cubes that reside within.
+
+Let's focus on the first part of the question, knowing this, there should be 600 FACES covered.
+We know this by each face having 100 cubes and there are 6 sides on a cube. 
+
+This then beckons the question of overlap and yes it does have much overlap.
+
+For a physical sense, lets represent the connection between two points as an edge, thus those points now may be
+represented as a vertex. We know this since an edge is always connected by two vertices.
+
+Now we should have the following data recorded
+600 faces covered
+12 Edges (Draw it out)
+8 Vertices
+
+Each edge must then have 10 cubes on it. We must subtract those 10 from each edge
+since there is a distinct overlap.
+
+Think of it as a piece of paper overlapping with another.
+
+So 600 - 10 * 12 = 480.
+
+The problem with this and if you've taken a Probabilty class is that we have subtracted from
+the main souce but have left a hole where the vertices are. But how?
+
+If we had four pieces of paper, all overlapping one another on their edges. Subtracting this from all four
+would leave a hole in the center. Those edges led to that vertex, the vertex is the hole.
+
+Thus we now must add the number of vertices back into the problem to get our final answer.
+
+Therefore, 480 + 8 = 488.
+
+
+The follow up question is taking 1,000 and subtracting from 488 to receive our answer. Again, in probability land, this
+is our axiom.
+
+1000 - 488 = 512.
+
+
+Method 2: Thinking in a physical sense and a little humor, think of the cube as an onion.
+The paint is all around the outside, being our outter layer, thus if we peel it, the remaining would be
+10 - 2 = 8 for each.
+
+Imagine we had a 4x4x4 cube, lets look at the front face
+
+4x4
+
+Peeling this
+1	1	1	1
+1	1	1	1
+1	1	1	1
+1	1	1	1
+
+Set all outisde 1's to 0's
+0	0	0	0
+0	1	1	0
+0	1	1	0
+0	0	0	0
+
+Hence our equation works out.
+
+Returning back to our Rubix cube, we will have 8x8x8 sides untouched.
+
+1000 - 512 (8x8x8) = 488. Therefore 488 cubes have been untouched.
+
+We have just found the solution to problem 2 as well, 8x8x8 cubes have been untouched by the delayering, thus 512.
