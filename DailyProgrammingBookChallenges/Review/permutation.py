@@ -1,3 +1,11 @@
+'''
+	Pivot is the digit to swap. Second largest starting from len of string - 2
+	Swap is the absolute largest digit
+	Swap those two
+
+	Reverse from pivot down 1
+'''
+
 def permutation(n, k):
 	if k < 1:
 		return n
