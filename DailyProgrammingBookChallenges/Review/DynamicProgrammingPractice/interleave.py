@@ -48,6 +48,8 @@ def problem(s1, s2, s3):
 			res = (curr[-1] and s2[j - 1] == s3[i + j - 1]) or (prev[j] and s1[i - 1] == s3[i + j - 1])
 			curr.append(res)
 		prev = curr
+		print(curr)
 	return prev[-1]
 
 print(problem('aab','bcd','aabbcd'))
+print(problem('adb','aabbc','aaabbdbc'))

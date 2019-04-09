@@ -49,7 +49,7 @@ def max_sum(root):
 	if root.left is None:
 		return r_current + root.value, r_total
 	else:
-		return l_current + root.value, l_current
+		return l_current + root.value, l_total
 
 root = Node(-20, left=Node(5, left=Node(3), right=Node(2)), right=Node(10, left=Node(5), right=Node(9, left=Node(0, left=Node(4)))))
 print(max_sum(root)[1])

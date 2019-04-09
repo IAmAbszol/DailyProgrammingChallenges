@@ -52,7 +52,6 @@ def burst(nums):
 			right = 1
 		else:
 			right = nums[i + 1]
-		print(nums, i, '->',left,nums[i],right, (nums[i] * left * right))
 		return nums[i] * left * right
 
 	if len(nums) == 1:
@@ -64,7 +63,6 @@ def burst(nums):
 		remaining = [n for idx, n in enumerate(nums) if idx != i]
 		local = compute(nums, i) + burst(remaining)
 		score = max(score, local)
-		cache[
 	return score
 
 print(burst([3,1,5,8]))
